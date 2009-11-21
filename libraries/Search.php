@@ -236,16 +236,16 @@ class Search_Core {
 	 * Add a Zend document - utility call to underlying Zend method
 	 *
 	 * @param Zend_Search_Lucene_Document	$doc 	Document to add
-	 * @return	Search	return this instance for method chaining
+	 * @return	Search	return this instance for method chaining	
 	 */
 	public function addDocument(Zend_Search_Lucene_Document $doc) {
-
+		
 		$this->open_index()->addDocument($doc);
 
 		// return this so we can have chainable methods
-		return $this;
+		return $this;		
 	}
-
+	
 	private function get_index_path() {
 		return APPPATH.$this->index_path;
 	}

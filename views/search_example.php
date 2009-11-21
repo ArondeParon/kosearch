@@ -65,7 +65,7 @@
 
 		<h3>Search example</h3>
 
-		<p><a href="/search/add" title="add some music">Add some music</a> to search against</p>
+		<p><a href="/search_example/add" title="add some music">Add some music</a> to search against</p>
 		<p>By selecting the above link, the following will be added to the search index:</p>
 		<table border="0" cellspacing="0" cellpadding="0">
 			<thead>
@@ -105,13 +105,13 @@
 		</table>
 		<p>You should see some files in the <strong>searchindex</strong> folder. These are the index files</p>
 		<p id="form">Try the following searches: 
-		<a href="/search_example?q=stone#form">stone</a>, 
-		<a href="/search_example?q=star#form">star</a>,
-		<a href="/search_example?q=star*#form">star*</a>, 
-		<a href="/search_example?q=sugar&amp;form=artists#form">sugar</a>, 
-		<a href="/search_example?q=title:stone&amp;form=artists#form">title:stone</a>,
-		<a href="/search_example?q=artist:stone&amp;form=artists#form">artist:stone</a>, 
-		<a href="/search_example?q=type:cd and title:sugar&amp;form=artists#form">type:cd and title:sugar</a></p>
+			<a href="/search_example?q=stone#form">stone</a>, 
+			<a href="/search_example?q=star#form">star</a>,
+			<a href="/search_example?q=star*#form">star*</a>, 
+			<a href="/search_example?q=sugar&amp;form=artists#form">sugar</a>, 
+			<a href="/search_example?q=title:stone&amp;form=artists#form">title:stone</a>,
+			<a href="/search_example?q=artist:stone&amp;form=artists#form">artist:stone</a>, 
+			<a href="/search_example?q=type:cd and title:sugar&amp;form=artists#form">type:cd and title:sugar</a></p>
 		<hr/>
 		<form method="get" action="/search_example#form">
 			<label for="q">search</label>
@@ -248,7 +248,7 @@ $search->find($query);
 </p>
 <h3>How to index other content</h3>
 <p>Zend Search is capable of indexing web pages, PDFs, Word docs etc. The docs explain in detail how to do this. Here's an example that indexes the Kohana home page</p>
-<p><a href="/search_example/addurl" title="add the Kohana home page">Add Kohana home page</a> to search against</p>
+<p><a href="/search/addurl" title="add the Kohana home page">Add Kohana home page</a> to search against</p>
 <hr/>
 <p id="form2">Now try the following search: <a href="/search_example?q=kohana&amp;form=kohana#form2">kohana</a></p>
 <hr/>
