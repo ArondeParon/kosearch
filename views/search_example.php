@@ -249,7 +249,7 @@ $search->find($query);
 <h3>How to index other content</h3>
 <p>Zend Search is capable of indexing web pages, PDFs, Word docs etc. The docs explain in detail how to do this. 
 	Below is an example that indexes the Kohana home page. Take a look at the source to seee hoe it works:</p>
-<p><a href="/search/addurl" title="add the Kohana home page">Add Kohana home page</a> to search against</p>
+<p><a href="/search_example/addurl" title="add the Kohana home page">Add Kohana home page</a> to search against</p>
 <hr/>
 <p id="form2">Now try the following search: <a href="/search_example?q=kohana&amp;form=kohana#form2">kohana</a></p>
 <hr/>
