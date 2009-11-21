@@ -105,9 +105,9 @@
 		</table>
 		<p>You should see some files in the <strong>searchindex</strong> folder. These are the index files</p>
 		<p id="form">Try the following searches: 
-			<a href="/search_example?q=stone#form">stone</a>, 
-			<a href="/search_example?q=star#form">star</a>,
-			<a href="/search_example?q=star*#form">star*</a>, 
+			<a href="/search_example?q=stone&amp;form=artists#form">stone</a>, 
+			<a href="/search_example?q=star&amp;form=artists#form">star</a>,
+			<a href="/search_example?q=star&amp;form=artists*#form">star*</a>, 
 			<a href="/search_example?q=sugar&amp;form=artists#form">sugar</a>, 
 			<a href="/search_example?q=title:stone&amp;form=artists#form">title:stone</a>,
 			<a href="/search_example?q=artist:stone&amp;form=artists#form">artist:stone</a>, 
@@ -247,7 +247,8 @@ $search->find($query);
 	about all the possible ways to search using the query language - terms, fields, wildcards, ranges, booleans etc.
 </p>
 <h3>How to index other content</h3>
-<p>Zend Search is capable of indexing web pages, PDFs, Word docs etc. The docs explain in detail how to do this. Here's an example that indexes the Kohana home page</p>
+<p>Zend Search is capable of indexing web pages, PDFs, Word docs etc. The docs explain in detail how to do this. 
+	Below is an example that indexes the Kohana home page. Take a look at the source to seee hoe it works:</p>
 <p><a href="/search/addurl" title="add the Kohana home page">Add Kohana home page</a> to search against</p>
 <hr/>
 <p id="form2">Now try the following search: <a href="/search_example?q=kohana&amp;form=kohana#form2">kohana</a></p>
