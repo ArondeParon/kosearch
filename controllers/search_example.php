@@ -33,7 +33,12 @@ class Search_Example_Controller extends Controller {
 					
 					$hits = Search::instance()->find($query);
 					
-					$results2 = $query->highlightMatches(iconv('UTF-8', 'ASCII//TRANSLIT', $hits[0]->body));
+					if(sizeof($hits) > 0) {
+						$results2 = $query->highlightMatches(iconv('UTF-8', 'ASCII//TRANSLIT', $hits[0]->body));
+					}
+					else {
+						$results2 = '<p style="color:#f00">No results found</p>';
+					}
 				}
 			}
 			catch(Exception $e) {
